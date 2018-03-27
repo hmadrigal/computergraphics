@@ -1,0 +1,37 @@
+Window [-75.000 -50.000 0.000] [75.000 50.000 0.000]
+Background 255 250 250
+Eye 0.000 0.000 -500.000
+Intensidad 0.100
+c1 = 1.000000 c2 = 0.005000 c3 = 0.000500 
+El archivo textura 2.avs no se logro abrir.
+El archivo image.avs no se logro abrir.
+El archivo xx1.avs no se logro abrir.
+Inicia Objeto
+*************** El kn es 500
+Cargamos Datos Poligono
+Cargaremos Transformaciones
+Cargamos Trans
+Vamos Agregar el Objeto
+Agregamos el Objeto
+Inicia Objeto
+*************** El kn es 500
+Cargamos Datos Esfera
+Vamos Agregar el Objeto
+Agregamos el Objeto
+Termino el Parseo
+Objetos 2
+Polygon
+Kd = 0.7000 Ka = 0.2000 Ks = 0.9000 Kn = 500
+R = 0.4902 G = 0.8627 B = 0.5686
+[-46.428, 43.872, 40.000]
+[10.990, 74.645, 37.500]
+[-4.435, 20.073, 15.500]
+[-34.227, -7.733, 11.000]
+A = 0.0000 B = 0.0000 C = -1.0000 D = 0.0000
+***********
+Sphere
+R = 0.9804 G = 0.1961 B = 0.4902
+Kd = 0.7000 Ka = 0.1000 Ks = 0.9000 Kn = 500
+Center: 0.000 0.000 0.000
+Radius: 15.000
+***********

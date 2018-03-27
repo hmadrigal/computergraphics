@@ -1,0 +1,2 @@
+Cambiar el getIntersections para que solo meta una de las intersecciones con el objeto.
+Modificar las consecuencias que esto trae en getTransparencia.

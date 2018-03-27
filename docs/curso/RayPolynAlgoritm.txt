@@ -1,0 +1,17 @@
+Ray/Polygon Algorithm
+
+NC<-0
+SH<-SIGN(v'0)
+
+For each edge of the polygon formed by points (u'a v'a) and (u'b v'b),
+  where a=0 to NV-1, b=(a+1)MOD NV
+	Set the next sign holder, NSH<-SIGN (v'b)
+
+	if(SH<>NSH)
+		if u'a>0 and u'b>0, then NC<-NC+1
+		
+		Else if either u'a>0 and u'b>0 then compute intersection on the 
+		U' axis, u'a - v'a(u'b - u'a)/(v'b - v'a) >0 then NC <- NC+1
+	SH<-NSH
+	Next Edge {a<-a+1, b<-b+1}
+

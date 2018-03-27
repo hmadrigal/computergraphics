@@ -1,0 +1,52 @@
+	TITULO	        "TR vs RX"     			//Título de la ventana
+	VENTANA         (-320.0 -240.0) (320.0 240.0)	//(XMIN YMIN) (XMAX YMAX)
+	COLOR_FONDO     255 255 255			//R G B
+	POSICION_OJO    (0.0 0.0 -500.0)	//(Xe Ye Ze)
+	LUZ_AMBIENTE    0.2                      // [0..1] Ia
+	FATT          	1.0 0.0005 0.000005              // C1 C2 C3
+	RESOLUCION 640 480
+	ANTIALIASING		-10			// Niveles de antialiasing
+	REFLEXION 		0.0
+	TRANSPARECIA 20
+
+LUZ
+	COLOR        255 255 255
+	POSICION    (0.0 400.0 -250)
+	INTENSIDAD  0.55
+
+LUZ
+	COLOR        255 255 255
+	POSICION    (-100.0 400.0 -500)
+	INTENSIDAD  0.75
+
+LUZ
+	COLOR        255 255 255
+	POSICION    (100.0 400.0 -750)
+	INTENSIDAD  0.75
+
+LUZ
+	COLOR       255 255 255
+	POSICION    (0.0 400.0 -1000)
+	INTENSIDAD  0.55
+
+
+//---------------------------------------------------------------
+
+OBJETO
+	COLOR	0.0 0.0 255.0
+	KD 0.1 KA 0.1 KS 0.1 KN 500 KT 0.5 O1 0.5 O2 0.25 O3 0.75
+ESFERA
+	POSICION (0.0 0.0 0.0)
+	RADIO 60
+
+
+OBJETO
+	COLOR   255.0 0.0 0.0
+	KD 1.0 KA 0.2 KS 0.5 KN 100 KT 1.0 O1 1.0 O2 0.0 O3 0.0
+POLIGONO
+	ANCLA (0.0 0.0 0.0)
+	PUNTOS
+	(-320.0 -240.0 0.0)
+	(-320.0 240.0 0.0)
+	(320.0 240.0 0.0)
+	(320.0 -240.0 0.0)

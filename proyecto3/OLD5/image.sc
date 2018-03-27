@@ -1,0 +1,79 @@
+	TITULO	        "Que tuanis!!!"     //Título de la ventana
+	VENTANA         (-100.0 -75.0) (100.0 75.0)       //(XMIN YMIN) (XMAX YMAX)
+	COLOR_FONDO     70 130 180              //R G B
+	POSICION_OJO    (0.0 100.0 -500.0)              //(Xe Ye Ze)
+	LUZ_AMBIENTE    0.1                      // [0..1] Ia
+	FATT          	1.0 0.005 0.00005              // C1 C2 C3
+	RESOLUCION 640 480
+	ANTIALIASING		-10						// Niveles de antialiasing
+	REFLEXION 			15
+
+MAPAS_DE_TEXTURAS
+	TEXTURA "INGNORENME!!!!"		// No se cuenta
+	TEXTURA "Durer.avs"			// #0
+	TEXTURA "binocle3.avs"			// #1
+	TEXTURA "fracmusicx.avs"		// #2
+	TEXTURA "shakira1.avs"			// #3
+	TEXTURA "shakira2.avs"			// #4
+
+LUZ
+	COLOR        0.2 0.4 0.5
+	POSICION     (10.0 60.0 -180)
+	INTENSIDAD  1.5
+
+LUZ
+	COLOR        0.2 0.4 0.5
+	POSICION     (0.0 100.0 -20)
+	INTENSIDAD  0.6
+
+OBJETO
+	COLOR	230.0 120.0 95.0
+	KD 0.85 KA 0.2 KS 0.5 KN 135 KT 0.3 O1 0.8 O2 0.2 O3 0.4
+ESFERA
+	POSICION (0.0 0.0 0.0)
+	RADIO 25
+	GREENWICH [ 0.0 1.0 0.0 ]
+	NORTE [ 1.0 0.0 0.0 ]
+	PLANOS_DE_CORTE
+	PLANO_TRANSFORMADO_Y + {
+		ROTAR_Z 25
+	}
+	TRANSFORMACIONES
+		ROTAR_Z 15
+		ROTAR_X 30
+		TRASLADAR [-10.0 -15.0 -60.0]
+
+
+OBJETO
+	COLOR	110 123 139
+	KD 0.85 KA 0.2 KS 0.5 KN 135 KT 0.3 O1 0.4 O2 0.6 O3 0.4
+ESFERA
+	POSICION (0.0 0.0 0.0)
+	RADIO 15
+	TRANSFORMACIONES
+		TRASLADAR [-75.0 25.0 -5.0]
+
+OBJETO
+	COLOR   0.0 255 0.0
+	KD 1.0 KA 0.2 KS 0.5 KN 30 KT 0.3 O1 0.3 O2 0.7 O3 0.4
+CILINDRO
+	POSICION 0.0 0.0 0.0
+	DIRECCION 0.0 1.0 0.0
+	RADIO 15.0
+	TRANSFORMACIONES
+	ROTAR_X 75
+	ROTAR_Y 75
+	TRASLADAR [-20.0 -30.0 15.0]
+
+OBJETO
+	COLOR   0.0 50.0 230.0
+	KD 0.7  KA 0.5 KS 0.9 KN 500  KT 0.3 O1 0.95 O2 0.05 O3 0.4
+POLIGONO
+	ANCLA (0.0 0.0 0.0)
+	PUNTOS
+	(-50.0 50.0 0.0)
+	(50.0 50.0 0.0)
+	(50.0 -50.0 0.0)
+	(-50.0 -50.0 0.0)
+	TRANSFORMACIONES
+	TRASLADAR [-30.0 0.0 200.0]

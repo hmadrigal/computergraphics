@@ -1,0 +1,32 @@
+Ojo.
+
+la luz esta funcando. Lo que pasa es que en la escene actual, si la corremos para adelante (z = 40),
+se ve que si sirve, porque se ilumina un objeto alejado y los mas cercanos no, ahora, si se hace la 
+luz para atras (z = 10), se ve como se iluminan los objetos, pero aun la esfera blanca sigue muy iluminada,
+creo que es por que no se esta tomando en cuenta la distancia, (jugar con c1, c2, y c3).
+
+Por el contrario, si la luz se pone con z negativo, los objetos se iluminan totalmente. (ej. z = -50).
+
+Todo lo anterior probado con [c1,c2,c3] = [1.0,0.0,0.0].
+
+Esto fue lo de la ultima version que le mandE.
+
+02 - 01 - 2003
+
+Estoy breteando con la Window  = (-35.0, -35.0, 0.0) - (35.0, 35.0, 0.0).
+Mae, hay que ver como se bretea con la posicion del ojo.
+Si se pone a (0.0, 0.0, -600) funca tuanis.
+Ahora pruebe con Ojo = (600.0, 600.0 -600.0). Se ve bien raro.
+Pero si se pone (600.0, 600.0, -10000). Mejora un poquillo.
+Se bien si se pone a (600.0. 600.0, -1000000).
+
+Creo que vamos a tener problema las vistas.
+No he probado cambiando la Ventana.
+Digo, en tamanho o posicion(Otro plano).
+
+Una vara que puede hacer, es que la imagen se vaya pintando en la ventana conforme se hace.
+Por el momento se hace primero y despues se despliega.
+No crea que es que ha pegado.
+Vea una vara en la funcion, que se llama stats. Es como una barra de progreso, pero hace muy lenta la vara.
+
+Bueno, cualquier pregunta me llama.

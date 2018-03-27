@@ -1,0 +1,147 @@
+	TITULO	        "Con-AntiAliasing"     //Título de la ventana
+	VENTANA         (-100.0 -75.0) (100.0 75.0)       //(XMIN YMIN) (XMAX YMAX)
+	COLOR_FONDO     5.0 15.0 20.0              //R G B
+	POSICION_OJO    (10.0 10.0 -500.0)              //(Xe Ye Ze)
+	LUZ_AMBIENTE    0.1                      // [0..1] Ia
+	FATT          	1.0 0.005 0.00005              // C1 C2 C3
+	RESOLUCION 640 480
+	ANTIALIASING	-10
+	REFLEXION 	2
+	TRANSPARECIA 	2
+
+MAPAS_DE_TEXTURAS
+	TEXTURA "INGNORENME!!!!"		// No se cuenta
+	TEXTURA "mapamundi.avs"		//#0
+ 	TEXTURA "textura.avs"		//#1
+	TEXTURA "ji.avs"		//#2
+	TEXTURA "mapa.avs"		//#3
+
+MAPAS_DE_GRISES
+	GRIS "mapaaltura.avs"		//#0
+ GRIS "calado.avs"		//#1
+	GRIS "calado2.avs"		//#2
+	GRIS "altura.avs"		//#3
+
+LUZ
+	COLOR        25.0 25.0 25.0
+	POSICION     (0.0 150.0 -80)
+	INTENSIDAD   1.0
+
+LUZ
+	COLOR        25.0 255.0 255.0
+	POSICION     (0.0 150.0 150)
+	INTENSIDAD   1.0
+LUZ
+	COLOR        255.0 255.0 255.0
+	POSICION     (0.0 150.0 350)
+	INTENSIDAD  1.0
+
+LUZ
+	COLOR        25.0 25.0 25.0
+	POSICION     (-50.0 0.0 -60.0)
+	INTENSIDAD   1.0
+
+LUZ
+	COLOR        25.0 25.0 25.0
+	POSICION     (50.0 0.0 -60.0)
+	INTENSIDAD   1.0
+
+LUZ
+	COLOR        25.0 25.0 25.0
+	POSICION     (0.0 0.0 -80.0)
+	INTENSIDAD   1.0
+
+
+LUZ
+	COLOR        255.0 255.0 255.0
+	POSICION     (0.0 -150.0 -50.0)
+	INTENSIDAD  1.0
+
+//---------------------------------------------------------------
+OBJETO //PARED de Abajo
+	COLOR   35 102 147
+	KD 0.8 KA 0.2 KS 0.1 KN 100 KT 0.0 O1 1.0 O2 0.0 O3 0.0
+POLIGONO
+	ANCLA (0.0 0.0 100.0)
+	PUNTOS
+	(-150.0 1500.0 100.0)
+	(150.0 1500.0 100.0)
+	(150.0 -200.0 100.0)
+	(-150.0 -200.0 100.0)
+	//TEXTURA
+                //IMAGEN 1
+		//STRETCH
+                //TILED 50 50
+	TRANSFORMACIONES
+	ROTAR_X 87
+	TRASLADAR [0.0 -50.0 0.0]
+
+OBJETO //PARED Fondo
+	COLOR   143 143 188
+	KD 0.8 KA 0.2 KS 0.1 KN 100 KT 0.0 O1 1.0 O2 0.0 O3 0.0
+POLIGONO
+	ANCLA (0.0 0.0 0.0)
+	PUNTOS
+	(-150.0 150.0 0.0)
+	(150.0 150.0 0.0)
+	(150.0 -50.0 0.0)
+	(-150.0 -50.0 0.0)
+
+	TEXTURA
+                IMAGEN 1
+		STRETCH
+                //TILED  100 100 //75 50
+	//CALADO	IMAGEN 0 STRETCH
+		//TILED 30 30
+	//ALTURA IMAGEN 0 RANGO -1.5 1.5 STRETCH
+	TRANSFORMACIONES
+		//ROTAR_Z 15
+		//ROTAR_Y -10
+		//ROTAR_X 150
+		TRASLADAR [0.0 0.0 500.0]
+
+
+OBJETO	//PARED Derecha
+	COLOR   143 143 188
+	KD 0.8 KA 0.2 KS 0.1 KN 100 KT 0.0 O1 1.0 O2 0.0 O3 0.0
+POLIGONO
+	ANCLA (0.0 0.0 0.0)
+	PUNTOS
+	(0.0 150.0 0.0)
+	(0.0 150.0 500.0)
+	(0.0 -50.0 500.0)
+	(0.0 -50.0 0.0)
+	TRANSFORMACIONES
+	TRASLADAR [150.0 0.0 0.0]
+
+OBJETO //PARED Izquierda
+	COLOR   143 143 188
+	KD 0.8 KA 0.2 KS 0.1 KN 100 KT 0.0 O1 1.0 O2 0.0 O3 0.0
+POLIGONO
+	ANCLA (0.0 0.0 0.0)
+	PUNTOS
+	(0.0 150.0 0.0)
+	(0.0 150.0 500.0)
+	(0.0 -50.0 500.0)
+	(0.0 -50.0 0.0)
+	TRANSFORMACIONES
+	TRASLADAR [-150.0 0.0 0.0]
+//-------------------------------------------------------------------------------PAREDES
+OBJETO
+	COLOR	21 55 131
+	KD 0.7  KA 0.1 KS 0.0 KN 50 KT 0.3 O1 0.3 O2 0.3 O3 0.4
+ESFERA
+	POSICION (0.0 0.0 0.0)
+	RADIO 35
+	GREENWICH [ 1.0 0.0 0.0 ]
+	NORTE [ 0.0 1.0 0.0 ]
+	//TEXTURA IMAGEN 0 STRETCH
+	//TILED  20 20 //75 50
+	ALTURA IMAGEN 0 RANGO 0.2 1.0 STRETCH
+	CALADO IMAGEN 1 STRETCH
+	PLANOS_DE_CORTE  PLANO_TRANSFORMADO_X + {}
+	TRANSFORMACIONES
+		ROTAR_X 15
+		ROTAR_Y 90
+		ROTAR_Z 45
+		//TRASLADAR [0.0 50.0 300.0]

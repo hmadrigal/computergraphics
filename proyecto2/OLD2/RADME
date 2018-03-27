@@ -1,0 +1,12 @@
+Ojo.
+
+la luz esta funcando. Lo que pasa es que en la escene actual, si la corremos para adelante (z = 40),
+se ve que si sirve, porque se ilumina un objeto alejado y los mas cercanos no, ahora, si se hace la 
+luz para atras (z = 10), se ve como se iluminan los objetos, pero aun la esfera blanca sigue muy iluminada, 
+creo que es por que no se esta tomando en cuenta la distancia, (jugar con c1, c2, y c3).
+
+Por el contrario, si la luz se pone con z negativo, los objetos se iluminan totalmente. (ej. z = -50).
+
+Todo lo anterior probado con [c1,c2,c3] = [1.0,0.0,0.0].
+
+Bueno, cualquier pregunta me llama.

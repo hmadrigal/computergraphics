@@ -1,0 +1,22 @@
+  1-) Roberto Pineda - Herberth Madrigal - Escena O
+  2-) Carlos Sanchez - Luis Solano       - Escena C
+  3-) Roberto Pineda - Herberth Madrigal - Escena H
+  4-) Rolando Vargas - Jorge Valverde    - Escena I
+  5-) Rolando Vargas - Jorge Valverde    - Escena M
+  6-) Lester Aguero - Jimmy Madrigal     - Escena L
+  7-) Berman Romero - Freddy Menjivar    - Escena Q
+  8-) Cesar Segura  - David Perez        - Escena A
+  9-) Aiko Fallas - German Solis         - Escena G
+ 10-) Berman Romero - Freddy Menjivar    - Escena R
+ 11-) Jose Medaglia - Pablo Monge        - Escena V
+ 12-) Jose Medaglia - Pablo Monge        - Escena U
+ 13-) Erwin Knohr  - L.D. BolaNos        - Escena J
+ 14-) Aiko Fallas - German Solis         - Escena F
+ 15-) Roy Quesada - Daniel Alvarado      - Escena S
+ 16-) Roy Quesada - Daniel Alvarado      - Escena T
+ 17-) Lester AgUero - Jimmy Madrigal     - Escena P
+ 18-) Cesar Segura - David Perez         - Escena B
+ 19-) Daniel Alvarez                     - Escena D
+ 20-) Carlos SAnchez - Luis Solano       - Escena E
+ 21-) Erwin Knohr - L.D. BolaNos         - Escena K
+

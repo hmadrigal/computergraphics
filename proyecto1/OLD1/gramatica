@@ -1,0 +1,124 @@
+/*
+
+window 56.32 65.2 76.23 87.6
+
+begin territory
+	color_rgb = 255 315 26
+	texture = "../images/image.avs"
+	begin limits
+		32.6 25.3
+		25.36 25.32
+		21.3 32.4
+		25.6 54.6
+	end limits
+end territory
+
+begin territory
+	color = RED
+	texture = "../images/image.avs"
+	begin limits
+		32.6 25.3
+		25.36 25.32
+		21.3 32.4
+		25.6 54.6
+	end limits
+end territory
+
+init_rule ->
+	window_rule territory_list
+
+window_rule ->
+	WINDOW CONSTANT CONSTANT CONSTANT CONSTANT
+
+territory_list ->
+	teritory_spec
+	| territory_list teritory_spec
+
+teritory_spec ->
+	BEGIN TERRIRTORY color_spec texture_spec limits_spec END TERRITORY
+
+color_spec ->
+	COLOR_RGB '=' CONSTANT CONSTANT CONSTANT
+	| COLOR '=' color_choice
+
+color_choice ->
+	WHITE
+	| YELLOW
+	| MAGENT
+	| RED
+	| CYAN
+	| GREEN
+	| BLUE
+	| BLACK
+
+texture_spec ->
+	TEXTURE '=' STRING_LITERAL
+
+limits_spec ->
+	BEGIN LIMITS limits_list END LIMITS
+
+limits_list ->
+	CONSTANT CONSTANT
+	| limits_list CONSTANT CONSTANT
+
+*/
+
+window 0.0 0.0 150.0 150.0
+
+begin territory
+	rgb-color = 255 214 15
+	texture = "../images/image1.avs"
+	begin limits
+		1.0 1.0
+		1.0 100.0
+		100.0 100.0
+		100.0 1.0
+	end limits
+end territory
+
+begin territory
+	color = WHITE
+	texture = "../images/image2.avs"
+	begin limits
+		32.6 25.3
+		25.36 25.32
+		21.3 15
+		25.6 54.6
+	end limits
+end territory
+
+begin territory
+	rgb-color = 235 156 220
+	texture = "../images/image3.avs"
+	begin limits
+		25.36 25.15
+		95.32 32.0
+		32.65 65.28
+		15.02 69.31
+		87.215 15.5
+	end limits
+end territory
+
+begin territory
+	rgb-color = 65 32 220
+	texture = "../images/image4.avs"
+	begin limits
+		32.6 25.3
+		85.6 25.2
+		25.36 25.32
+		21.3 32.4
+		25.6 54.6
+	end limits
+end territory
+
+begin territory
+	rgb-color = 156 220 215
+	texture = "perro2.avs"
+	begin limits
+		32.6 25.3
+		85.6 25.2
+		25.36 25.32
+		21.3 32.4
+		25.6 54.6
+	end limits
+end territory
